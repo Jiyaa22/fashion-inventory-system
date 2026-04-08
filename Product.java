@@ -18,6 +18,16 @@ class Product implements Displayable {
         this.stock = stock;
     }
 
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public String getBrand() { return brand; }
+    public String getCategory() { return category; }
+    public double getPrice() { return price; }
+    public double getRating() { return rating; }
+    public int getStock() { return stock; }
+
+    public void setStock(int stock) { this.stock = stock; }
+
     public void display() {
         System.out.println(id + " | " + name + " | " + brand +
                 " | ₹" + price + " | Stock: " + stock);
