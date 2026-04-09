@@ -4,7 +4,8 @@ class DatabaseConnection {
 
     private static final String URL = "jdbc:sqlite:products.db";
 
-    public static Connection connect() throws SQLException {
+    public static Connecation connect() throws SQLException {
+
         try {
             Class.forName("org.sqlite.JDBC");
         } catch (ClassNotFoundException e) {
